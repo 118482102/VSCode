@@ -1,0 +1,234 @@
+
+/*
+	Theme Name: ReClean
+	Theme URI: http://www.codenx.com/
+	Theme Version: 1.0
+	Theme Date: 2013-03-12
+	Theme Author: CodeNx
+	Theme Author URI: http://www.codenx.com/
+	Theme License: GPLv2
+*/
+
+/*---[ Start: global css ]---*/
+
+/* Import Google Web Fonts
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400);
+-------------------------------------------------- @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+*/
+    /**
+    * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+    * http://cssreset.com
+    */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+h1 {
+	font-size: 50px;
+	line-height: 64px;
+	color: #000;
+}
+h2 {
+	font-size: 46px;
+	line-height: 54px;
+	color: #000;
+}
+
+
+h4{
+	font-size: 20px;
+	color:#111;
+}
+
+h6{
+	font-weight: 600;
+	font-size: 12px;
+	color:#111;
+}
+
+p{
+	font-weight: 700;
+	font-size: 12px;
+	color:#111;
+}
+
+/* Padding for the different HTML sections of the web page */
+.section-p1 {
+	padding: 40px 80px;
+}
+
+.section-m1 {
+	margin: 40px 0;
+}
+
+body {
+	width: 100%;
+}
+
+/* Header Start */
+#header{
+	/* placing navbar header items on other side of the screen */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 60px;
+	background: #f6f2f2;
+	box-shadow: 0 5px 15px rgba(198, 159, 159, 0.06);
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	left: 0;
+
+
+}
+
+/* Navbar Start */
+/* have navbar items in a horizontal line */
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* removing bullet points + pad distances between text */
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+
+/* editing text */
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a
+}
+
+/* text changes color when mouse hovers over it  */
+#navbar li a:hover,
+#navbar li a:active  {
+	color:#19bb00;
+
+}
+ 
+/* include line beneath navbar item when it is in use  */
+#navbar li a.active::after{
+	content: "";
+	width: 10px;
+	height: 2px;
+	background-color: #19bb00;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+
+}
+/* Home Page Start */
+/* Home/Hero Page is the first thing users will see */
+/* Inserting background picture and editing text positioning and size */
+
+#hero{
+
+	background-image: url("images/ballstop.jpg");
+	height: 90vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0, 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	
+}
+
+#hero h4{
+	padding-bottom: 15px;
+}
+
+#hero h1{
+	color: #19bb00;
+}
+
+/* editing button characteristics */
+#hero button{
+  
+  background-color: #5ce21d;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 80px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+}
+
+/* Features Section Start */
+/* Editing the features box using class fe-box */
+
+#features .fe-box{
+	width: 180px;
+	text-align: center;
+	padding: 15px 20px;
+	box-shadow: 20px 20px 34px rgba(214, 228, 218, 0.03);
+	border: 1px rgba(170, 223, 172, 0.06);
+	border-radius: 4px;
+	margin: 15px 0;
+}
+
+/* Having the features boxes align in one row instead of the default column */
+#features{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* Editing the features box imagery to cover the entire box  */
+#features .fe-box img{
+	float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Editing feature box text  */
+#features .fe-box h6{
+	display: inline-block;
+	padding: 9px 8px 6px 9px;
+	line-height: 1;
+	border-radius: 4px;
+	color: #19bb00;
+	background-color: antiquewhite;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+/* Featured Products Section start */
+#product1 {
+	text-align: center;
+}
+
+#product1 .pro{
+	width: 23%;
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 1px #cce7d0;
+}
+
+#product1 .pro img{
+	width: 100%;
+
+}
