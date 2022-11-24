@@ -53,22 +53,38 @@ h6{
 }
 
 p{
-	font-weight: 700;
+	font-weight: 300;
 	font-size: 12px;
-	color:#111;
+	color: #111;
 }
 
-/* Padding for the different HTML sections of the web page */
+/* Default padding for the different HTML sections of the web page */
 .section-p1 {
 	padding: 40px 80px;
 }
 
+/* Default margins for different sections */
 .section-m1 {
 	margin: 40px 0;
 }
 
 body {
 	width: 100%;
+}
+
+/* default button styling */
+button.normal {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+
 }
 
 /* Header Start */
@@ -115,7 +131,17 @@ body {
 #navbar li a:hover,
 #navbar li a:active  {
 	color:#19bb00;
+}
 
+/* remove mobile sidebar navigation icon from main website screen  */
+#mobile {
+	display: none;
+	align-items: center;
+}
+
+/* remove close button from website screen */
+#closeButton {
+	display: none;
 }
  
 /* include line beneath navbar item when it is in use  */
@@ -141,7 +167,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 0, 80px;
+	padding: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -174,6 +200,10 @@ body {
 
 }
 
+#hero button:hover {
+	background: #199805;
+	color: #fff;
+}
 /* Features Section Start */
 /* Editing the features box using class fe-box */
 
@@ -221,14 +251,379 @@ body {
 	text-align: center;
 }
 
+/* Have featured products in a row instead of a column */
+#product1 .pro-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+  
+}
+
+/* editing product box layout */
 #product1 .pro{
 	width: 23%;
 	min-width: 250px;
 	padding: 10px 12px;
 	border: 1px #cce7d0;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+	margin: 15px 0;
+	transition: 0.2s ease;
 }
 
+/* adding hover element to product box */
+#product1 .pro:hover{
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* making sure the product image does not take up the whole page */
 #product1 .pro img{
 	width: 100%;
+    border-radius: 20px;
+}
 
+/* have product box text align to the left */
+#product1 .pro .des{
+
+	text-align: start;
+	padding: 10px 0;
+}
+
+/* editing box description (.des) text */
+#product1 .pro .des h5{
+	padding-top: 7px;
+	color: #1a1a1a;
+	font-size: 14px;
+}
+
+#product1 .pro .des i{
+	font-size: 12px;
+	color: rgb(218, 233, 10);
+}
+
+#product1 .pro .des h4{
+	padding-top: 7px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #199805;
+}
+
+/* alter positioning of the cart in product box */
+#product1 .pro .cart{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50px;
+	background-color: #e8f6ea;
+	font-weight: 500;
+	color: #199805;
+
+}
+
+/* alter positioning of net fixing service banner text to center align  */
+#banner{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	/* adjusting background image for banner */
+	background-image: url(images/netrepair1.png);
+	width: 100%;
+	height: 40vh;
+	background-size: cover;
+	background-position: center;
+}
+
+/* editing banner text */
+#banner h4{
+	color: #fff;
+	font-size: 16px;
+}
+
+#banner h2{
+	color: #fff;
+	font-size: 30px;
+	padding: 10px 0;
+}
+
+/* have span text different color */
+#banner span{
+	color: #199805;
+}
+
+#banner button:hover{
+	background: #199805;
+	color: #fff;
+
+}
+
+
+/* Start of footer code  */
+
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer img{
+	width: 20vh;
+	height: 20vh;
+}
+
+footer .column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+footer .logo{
+	margin-bottom: 30px;
+}
+
+footer h4{
+	font-size: 14px;
+	padding: 20px;
+}
+
+footer p{
+	font-size: 13px;
+	margin: 0 0 8px 0;
+}
+
+footer a {
+	font-size: 13px;
+	text-decoration: none;
+	color: #222;
+	margin-bottom: 10px;
+	margin: 0 0 8px 0;
+}
+
+footer .follow{
+	margin-top: 20px;
+}
+
+footer .follow i{
+	font-size: 30px;
+	padding: 15px;
+	color: #1a1a1a;
+}
+
+footer .follow i{
+	color: #199805;
+	padding-right: 4px;
+	cursor: pointer;
+ 
+}
+
+footer .install .row img{
+	border: 1px solid #199805;
+	border-radius: 6px;
+	font-weight: 600;
+}
+
+footer .install {
+	margin: 10px 0 15px 0;
+}
+
+
+footer .follow i:hover,
+footer a:hover {
+	color: #d8dfd7;
+}
+
+footer .copyright {
+	width: 100%;
+	text-align: center;
+}
+
+/* Start of Sports Nets Page code */
+/* Changing background image and text */
+
+#page-header {
+	background-image: url(images/sportsnetsbackground.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+	
+}
+
+#page-header h2,
+#page-header p {
+	color: #fff;
+
+}
+
+
+/* net repair calender code */
+
+
+
+/* Starting to make the website responsive to other devices i.e. iPad Mini */
+/* Start with changing direction of the navbar to hug the right side of the screen */
+@media (max-width:799px) {
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		height: 100vh;
+		background-color: #fff;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+		padding: 80px 0 0 10px;
+		transition: 0.3s;
+	}
+
+	/* if navbar is active as set by javascript file then the margin from the right goes from 
+	0px to 300px and will become visible */
+	#navbar.active{
+		right: 0px;
+	
+		
+	}
+
+	/* create equal margins in between sidebar text */
+	#navbar li {
+		margin-bottom: 25px;
+	}
+
+	/* have sidebar showing when inspecting ipad dimensions */
+	#mobile {
+		display: flex;
+		align-items: center;
+	}
+
+	/* alter sidebar click icon color, size and position */
+	#mobile i {
+		color: #111;
+		font-size: 24px;
+		padding-left: 20px;
+	}
+
+	/* edit sidebar close button characteristics */
+	#closeButton {
+		display: initial;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		color: #222;
+		font-size: 24px;
+	}
+
+	/* remove shopping bag icon from medium screen device sidebar */
+	#lg-bag {
+		display: none;
+	}
+
+	#hero {
+		height: 70vh;
+		padding: 0 80px;
+		background-position: top 30% right 30%;
+	}
+
+	#features {
+		
+		justify-content: center;
+	}
+
+	#features .fe-box {
+		
+		margin: 25px 25px;
+	}
+
+	#product1 .pro-container {
+		justify-content: center;
+		
+	}
+
+	#product1 .pro {
+		
+		margin: 5px 5px;
+		
+	}
+
+	#banner {
+		height: 30vh;
+	}
+
+	/* creating responsive code for smaller media screen (iPhone X in this case) */
+	/* This section consists of just altering the CSS code to fit the smaller screen  */
+
+	@media (max-width: 477px) {
+
+		.section-p1 {
+			padding: 20px;
+		}
+
+		#header {
+			padding: 10px 30px;
+		}
+
+		h2 {
+			font-size: 32px;
+		}
+
+		h1 {
+			font-size: 38px;
+		}
+
+		#hero {
+		
+			padding: 0 20px;
+			background-position: 55%;
+		}
+
+		#features .fe-box {
+			width: 125px;
+			margin: 0 0 10px 0;
+		}
+
+		#features {
+			justify-content: space-between;
+		}
+		
+		#features .fe-box img {
+			
+			width: 120px;
+			height: 120px;
+			padding-right: 30px;
+		
+		}
+		#product1 .pro {
+			width: 100%;
+		}
+
+		#banner {
+			height: 40vh;
+		}
+
+		#navbar {
+			right: 0px;
+		}
+	
+		/* if navbar is active as set by javascript file then the margin from the right goes from 
+		0px to 300px and will become visible */
+		#navbar.active{
+			right: 190px;
+		
+			
+		}
+	}
+
+	
+
+	
 }

@@ -11,23 +11,32 @@
 </head>
 <body>
   
+
   <!-- code for header and navbar -->
   <!-- start with creating the logo -->
 <section id="header">
 
-   <a href="#"><img src="images/crestLogo.jpg" width="140" height="100" class="logo" alt=""></a>
+   <a href="#"><img src="images/logo1.png" width="140" height="100" class="logo" alt=""></a>
 
    <!-- creating navigation bar locations + icon from fontawesome.com -->
    <div>
       <ul id="navbar">
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shopnets.html">GAA Nets</a></li>
-        <li><a href="homenets.html">Home Nets</a></li>
+        <li><a href="shopnets.html">Sports Nets</a></li>
+        <li><a href="netrepairs.html">Net Repairs</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+        <a href="#" id="closeButton"><i class="fas fa-times"></i></a>
          
       </ul>
+   </div>
+ 
+   <!-- creating icon for mobile device sidebar navigation -->
+   <div id="mobile">
+     
+      <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
    </div>
   
 </section>
@@ -37,7 +46,7 @@
   <h4>Welcome to Ardfert Nets</h4>
   <h2>All your sports nets needs in one place </h2>
   <h1>Browse our wide range of products</h1>
-  <button>Shop Now!</button>
+  <a href="shopnets.html"><button class="normal">Shop Now!</button></a>
 
 </section>
 
@@ -65,8 +74,8 @@
  </div>
 
  <div class="fe-box">
-  <img src="images/rebounder.jpg" alt="">
-  <h6>Rebounder Nets</h6>
+  <img src="images/netrepair.jpg" alt="">
+  <h6>Net Repair Service</h6>
  </div>
 
  <div class="fe-box">
@@ -99,13 +108,132 @@
 <!-- Shopping Cart icon to add featured product straight to cart -->
           </div>
           <a href="#"><i class="fas fa-shopping-cart"></i></a>
-
-
         </div>
   
+        <div class="pro">
+          <img src="images/reboundernet.jpg" alt="">
+          <div class="des">
+            <h5>Ball Rebounder</h5>
+            <div class="star">
+              <!-- add in star icons -->
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+                       
+            </div>
+            <h4>£150</h4>
+<!-- Shopping Cart icon to add featured product straight to cart -->
+          </div>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="images/reboundernet.jpg" alt="">
+          <div class="des">
+            <h5>Ball Rebounder</h5>
+            <div class="star">
+              <!-- add in star icons -->
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+                       
+            </div>
+            <h4>£150</h4>
+
+<!-- Shopping Cart icon to add featured product straight to cart -->
+          </div>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
 
    </div>
 </section>
+
+<!-- section for net repair service -->
+
+<section id="banner" class="section-m1">
+  <h4>Net Repair Service</h4>
+  <h2>Book Now For <span>Quality Service</span> At An Affordable Price</h2>
+
+  <!-- button for Availability check that will lead to calender -->
+  <a href="netrepairs.html"><button class="normal">Check Availability</button></a>
+</section>
+
+
+<!-- footer for our home page -->
+<footer class="section-p1">
+  <div class="column">
+    <img class="logo" src="images/logo1.png" alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> 10 Church Road, Ardfert, Co. Kerry</p>
+    <p><strong>Phone:</strong> 012-3456789</p>
+    <p><strong>Email:</strong> ardfertnets@gmail.com</p>
+
+    <div class="follow">
+    <h4>Follow Us On Social Media</h4>
+    <!-- icons for social media connectivity -->
+    <div class="icon"></div>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+  </div>
+  </div>
+
+  <!-- class column for website information -->
+  <div class="column">
+    <h4>About</h4>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Returns Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms and Conditions</a>
+  </div>
+
+  <!-- class column for customer account information -->
+  <div class="column">
+    <h4><strong>Your Account</strong></h4>
+    <a href="#">Register/Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Purchase History</a>
+    <a href="#">Help</a>
+  </div>
+
+
+  <!-- Columns detailing upcoming app development -->
+  <div class="col install">
+    <h4>App Coming Soon</h4>
+    <p>To Both App Store and Google Play</p>
+    <div class="row">
+      <img src="images/appstore.jpg" alt="">
+      <img src="images/googleplay.png" alt="">
+    </div>
+    <p>Secure Payment Gateway</p>
+    <img src="images/stripe.jpg" alt="">
+  </div>
+
+
+  <!-- class for copyright text at bottom of the page  -->
+  <div class="copyright">
+    <p>© 2022 Ardfert Nets, Church Road, Ardfert, Co. Kerry. Company no. 123456789</p>
+  </div>
+
+
+</footer>
+
+
+  
+
+
+
+
+
+
 
 
      <script src="scripts.js"></script>
