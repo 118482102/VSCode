@@ -202,7 +202,7 @@ button.normal {
 
 #hero button:hover {
 	background: #199805;
-	color: #fff;
+	color: rgb(83, 192, 50);
 }
 /* Features Section Start */
 /* Editing the features box using class fe-box */
@@ -251,11 +251,13 @@ button.normal {
 	text-align: center;
 }
 
-/* Have featured products in a row instead of a column */
+/* Have products in a row instead of a column */
+/* Code will be re-used for individual product shop pages */
+
 #product1 .pro-container{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 20px;
+	padding-top: 5px;
   
 }
 
@@ -263,22 +265,23 @@ button.normal {
 #product1 .pro{
 	width: 23%;
 	min-width: 250px;
-	padding: 10px 12px;
-	border: 1px #cce7d0;
+	padding: 15px 12px;
+	border: 1px #10da2e;
 	border-radius: 25px;
 	cursor: pointer;
-	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+	box-shadow: 20px 20px 30px rgba(211, 3, 3, 0.737);
 	margin: 15px 0;
 	transition: 0.2s ease;
 }
 
 /* adding hover element to product box */
 #product1 .pro:hover{
-	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+	box-shadow: 20px 20px 30px rgba(12, 166, 76, 0.847);
 }
 
 /* making sure the product image does not take up the whole page */
 #product1 .pro img{
+	
 	width: 100%;
     border-radius: 20px;
 }
@@ -311,8 +314,8 @@ button.normal {
 
 /* alter positioning of the cart in product box */
 #product1 .pro .cart{
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	line-height: 40px;
 	border-radius: 50px;
 	background-color: #e8f6ea;
@@ -320,6 +323,14 @@ button.normal {
 	color: #199805;
 
 }
+
+#product1 .pro .cart:hover {
+	background: #199805;
+	color: #fff;
+
+}
+
+/* Start of net repair banner code  */
 
 /* alter positioning of net fixing service banner text to center align  */
 #banner{
@@ -460,9 +471,185 @@ footer .copyright {
 
 #page-header h2,
 #page-header p {
-	color: #fff;
+	color: rgb(232, 232, 237);
 
 }
+
+
+/* Start of shopnets.html code */
+
+#ball-stop-page-header {
+	background-image: url(images/shopnetsheader.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+}
+
+#ball-stop-page-header h2,
+#ball-stop-page-header p {
+	color: rgb(232, 232, 237);
+}
+
+
+
+/* Start of goalnets.html code */
+#goalnets-page-header {
+	background-image: url(images/shopnetsheader.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+}
+
+#goalnets-page-header h2,
+#goalnets-page-header p {
+	color: rgb(232, 232, 237);
+}
+
+
+
+/* Start of at-home-nets.html code */
+
+#at-home-nets-page-header {
+	background-image: url(images/shopnetsheader.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+}
+
+#at-home-nets-page-header h2,
+#at-home-nets-page-header p {
+	color: rgb(232, 232, 237);
+}
+
+
+/* Start of astro-pitch-nets.html code */
+
+#astro-pitch-nets-page-header {
+	background-image: url(images/shopnetsheader.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+}
+
+#astro-pitch-nets-page-header h2,
+#astro-pitch-nets-page-header p {
+	color: rgb(232, 232, 237);
+}
+
+
+/* Single Product Code (Also used for the astro pitch nets page) */
+/* Altering layout of the product images */
+
+
+/* This bit of code transfers the product description to the right right of the page */
+#prodetails {
+	display: flex;
+	margin-top: 20px;
+}
+
+#prodetails .single-product-image{
+	width: 40%;
+	margin-right: 50px;
+
+}
+
+/* Layout of smaller images below the main image */
+/* display: flex makes images form a row */
+
+.small-image-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* flex-basis makes smaller images take up any space available to them in line with their original size */
+
+.small-image-column {
+	flex-basis: 24%;
+	cursor: pointer;
+}
+
+
+/* Edit product description text width and move it down from the top */
+
+#prodetails .single-product-desc {
+	width: 50%;
+	padding-top: 30px;
+}
+
+/* Alters text padding for h4 text from top, right, bottom, left */
+
+#prodetails .single-product-desc h4 {
+	padding: 40px 0 20px 0;
+}
+
+/* Change font size for h2 text */
+
+#prodetails .single-product-desc h2 {
+	font-size: 26px;
+	
+}
+
+/* Code for input section of product page - allows customers to select the number of products they want */
+
+#prodetails .single-product-desc input {
+	width: 50px;
+	height: 50px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+	
+}
+
+/* Remove outline from the input box */
+
+#prodetails .single-product-desc input:focus {
+	outline: none;
+
+}
+
+/* Style the add to cart button which has a universal class which we already
+included in the html code (button.normal) */
+
+#prodetails .single-product-desc button {
+	background: #10da2e;
+	color: #fff;
+}
+
+/* Edit product description text */
+
+#prodetails .single-product-desc span {
+	line-height: 25px;
+}
+
+
+
+
+
+
 
 
 /* net repair calender code */
@@ -488,7 +675,7 @@ footer .copyright {
 	}
 
 	/* if navbar is active as set by javascript file then the margin from the right goes from 
-	0px to 300px and will become visible */
+	-300px to 0px and will become visible */
 	#navbar.active{
 		right: 0px;
 	
@@ -528,6 +715,8 @@ footer .copyright {
 		display: none;
 	}
 
+	/* Code below is to fit the web content into the smaller dimesions of the iPad screen */
+	
 	#hero {
 		height: 70vh;
 		padding: 0 80px;
@@ -623,6 +812,8 @@ footer .copyright {
 		}
 	}
 
+
+	
 	
 
 	
