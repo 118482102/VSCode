@@ -40,6 +40,9 @@
    
  </section>
 
+ <!-- Sections of product detail code has been influenced by https://www.youtube.com/watch?v=gW-q6G9KYTg&t=20s 
+and altered to suit my design and responsiveness issues -->
+
 
 <!-- Page will be divided into two sections - left side will have images and right side
 will contain descriptions -->
@@ -95,12 +98,34 @@ ksdnsjkdbfsdkfb djbfkjsdbfksjd kajfbjk kafbkasdbfadskfm jfabkja </span>
 
 </section>
 
+<!-- Query box for customers to make inquiries into certain products/issues etc. -->
+<!-- https://www.youtube.com/watch?v=UAWhbMDBGW4 and https://stackoverflow.com/questions/10186913/html5-textarea-placeholder-not-appearing 
+  helped in the development of the code -->
+
+<section id="info-box" class="section-p1">
+
+  <div class="single-product-desc">
+    <h4>Want More Information?</h2>
+    <h6>Feel free to contact us below</h6>
+    </div>
+  <div class="contact-box">
+    <form>
+      <input type="text" class="input-field" placeholder="Name">
+      <input type="text" class="input-field" placeholder="Email">
+      <input type="text" class="input-field" placeholder="Phone Number">
+      <textarea type="text" class="input-field" placeholder="Your Enquiry"></textarea>
+        <button class="normal">Submit</button>
+    </form>
+
+  </div>
+
+
+</section>
 
 <!-- Featured product section for single product pages -->
 <!-- Gives alternative options when inside a single product page -->
-
 <section id="product1" class="section-p1">
-  <h2>Featured Products</h2>
+  <h2>Related Products</h2>
   <!-- add in product container class -->
   <div class="pro-container">
        <div class="pro">
@@ -229,34 +254,36 @@ ksdnsjkdbfsdkfb djbfkjsdbfksjd kajfbjk kafbkasdbfadskfm jfabkja </span>
 
   <!-- Javascript code to make the small images clickable (Not Working Currently)-->
 
-<script>
+  <script>
 
-  var MainImage = document.getElementsById("MainImage");
-  var smallimg = document.getElementsByClassName("small-image");
-
-  // if anyone onclicks then the function will run to replace the MainImage with whichever number 
-  // smallimg is clicked on 
-
-  smallimg[0].onclick = function(){
-    MainImage.src = smallimg[0].src;
-  }
-  smallimg[1].onclick = function(){
-    MainImage.src = smallimg[1].src;
-  }
-  smallimg[2].onclick = function(){
-    MainImage.src = smallimg[2].src;
-  }
-  smallimg[3].onclick = function(){
-    MainImage.src = smallimg[3].src;
-  }
-
-</script>
-
-
+    var MainImage = document.getElementsById("MainImage");
+    var smallimg = document.getElementsById("small-image");
+  
+    // if anyone onclicks then the function will run to replace the MainImage with whichever number 
+    // smallimg is clicked on 
+  
+    smallimg[0].onclick = function(){
+      MainImage.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+      MainImage.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+      MainImage.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+      MainImage.src = smallimg[3].src;
+    }
+  
+  </script>
 
 
 
 
-     <script src="scripts.js"></script>
+
+
+
+
+<script src="scripts.js"> </script>
 </body>
 </html>

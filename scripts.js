@@ -1,3 +1,5 @@
+// Javascript code comes from https://www.youtube.com/watch?v=P8YuWEkTeuE&list=PL9bD98LkBR7P8MYh0RzNSHgeVNTA8g0nB
+
 // create function so that when the sidebar icon is clicked it will show the full sidebar
 
 //declare constants bar, navbar, closeButton 
@@ -23,5 +25,26 @@ if (closeButton) {
             nav.classList.remove('active');
         })
 }
+
+
+// Javascript code to add information to the cart 
+
+var addToCartButtons = document.getElementsByClassName('normal')
+for (var i = 0; i < addToCartButtons.length; i++) {
+     var button = addToCartButtons[i]
+     button.addEventListener('click', addToCartClicked)
+}
+
+
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.addToCartClicked
+    var title = shopItem.getElementsByClassName('normal')[0].innerText
+    console.log(h4)
+}
+
+
+
+
 
 

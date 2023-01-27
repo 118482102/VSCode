@@ -20,6 +20,9 @@
     * http://cssreset.com
     */
 
+	/* CSS styling mostly comes from https://www.youtube.com/watch?v=P8YuWEkTeuE
+	Most CSS code is altered to match my own design needs */
+
 *{
 	margin: 0;
 	padding: 0;
@@ -155,8 +158,8 @@ button.normal {
 	left: 20px;
 
 }
-/* Home Page Start */
-/* Home/Hero Page is the first thing users will see */
+/* Home Page Start - index.html*/
+/* Home Page is the first thing users will see */
 /* Inserting background picture and editing text positioning and size */
 
 #hero{
@@ -254,6 +257,7 @@ button.normal {
 /* Have products in a row instead of a column */
 /* Code will be re-used for individual product shop pages */
 
+/* Code for the container in which a row of products will be stored */
 #product1 .pro-container{
 	display: flex;
 	justify-content: space-between;
@@ -300,11 +304,13 @@ button.normal {
 	font-size: 14px;
 }
 
+/* Star icon size and color */
 #product1 .pro .des i{
 	font-size: 12px;
 	color: rgb(218, 233, 10);
 }
 
+/* text padding, size, weight, and color */
 #product1 .pro .des h4{
 	padding-top: 7px;
 	font-size: 14px;
@@ -324,9 +330,10 @@ button.normal {
 
 }
 
+/* have cart change color when clicked  */
 #product1 .pro .cart:hover {
 	background: #199805;
-	color: #fff;
+	color: rgb(135, 25, 25);
 
 }
 
@@ -364,6 +371,7 @@ button.normal {
 	color: #199805;
 }
 
+/* Have the banner change color when hovered over  */
 #banner button:hover{
 	background: #199805;
 	color: #fff;
@@ -453,8 +461,8 @@ footer .copyright {
 }
 
 /* Start of Sports Nets Page code */
-/* Changing background image and text */
 
+/* Changing background image and text */
 #page-header {
 	background-image: url(images/sportsnetsbackground.jpg);
 	background-size: cover;
@@ -561,6 +569,23 @@ footer .copyright {
 }
 
 
+/* Cart Page Code  */
+
+#cart-page-header {
+	background-image: url(images/cart.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+}
+
+
 /* Single Product Code (Also used for the astro pitch nets page) */
 /* Altering layout of the product images */
 
@@ -647,6 +672,54 @@ included in the html code (button.normal) */
 
 
 
+/* Single product contact us box code */
+
+#info-box {
+	background-color: #efefef;
+	font-family: sans-serif;
+	align-items: center;
+
+}
+
+#info-box .contact-box {
+	width: 100%;
+	background-color: #e8f6ea;
+	box-shadow: 0 0 20px 0 #efefef;
+	top: 50%;
+	left: 50%;
+	position: static;
+    align-items: center;
+}
+
+#info-box .contact-box form {
+	margin: 35px;
+
+}
+
+#info-box .contact-box input {
+	height: 50px;
+
+}
+
+#info-box .contact-box textarea {
+     height: 200px;
+
+}
+
+#info-box .input-field{
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #10da2e;
+	border-radius: 14px;
+	outline: none;
+}
+
+#info-box button:hover {
+	background-color: #10da2e;
+}
 
 
 
@@ -657,8 +730,12 @@ included in the html code (button.normal) */
 
 
 /* Starting to make the website responsive to other devices i.e. iPad Mini */
-/* Start with changing direction of the navbar to hug the right side of the screen */
+/* Do this with an @media query and declaring the max width of the device the code will apply itself to */
+
+
 @media (max-width:799px) {
+
+	/* Start with changing direction of the navbar to hug the right side of the screen */
 	#navbar {
 		display: flex;
 		flex-direction: column;
@@ -730,7 +807,7 @@ included in the html code (button.normal) */
 
 	#features .fe-box {
 		
-		margin: 25px 25px;
+		margin: 50px 50px;
 	}
 
 	#product1 .pro-container {
@@ -753,8 +830,11 @@ included in the html code (button.normal) */
 
 	@media (max-width: 477px) {
 
+	
+
 		.section-p1 {
 			padding: 20px;
+		
 		}
 
 		#header {
@@ -776,7 +856,7 @@ included in the html code (button.normal) */
 		}
 
 		#features .fe-box {
-			width: 125px;
+			width: 150px;
 			margin: 0 0 10px 0;
 		}
 
@@ -793,6 +873,12 @@ included in the html code (button.normal) */
 		}
 		#product1 .pro {
 			width: 100%;
+		
+		}
+
+		#product1 .pro-container{
+			flex-direction: column;
+			
 		}
 
 		#banner {
@@ -800,15 +886,33 @@ included in the html code (button.normal) */
 		}
 
 		#navbar {
-			right: 0px;
+			right: -300px;
 		}
 	
 		/* if navbar is active as set by javascript file then the margin from the right goes from 
 		0px to 300px and will become visible */
 		#navbar.active{
-			right: 190px;
+			right: 0px;
 		
 			
+		}
+        /* Code to edit responsive layout of the small screen single product file */
+		/* Start by having everything laid out in a column */
+
+		#prodetails {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#prodetails .single-product-image {
+			width: 100%;
+			margin-right: 0px;
+
+
+		} 
+
+		#prodetails .single-product-desc {
+			width: 100%;
 		}
 	}
 
