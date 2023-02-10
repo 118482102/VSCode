@@ -11,6 +11,8 @@
 
 /*---[ Start: global css ]---*/
 
+
+
 /* Import Google Web Fonts
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400);
 -------------------------------------------------- @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
@@ -23,12 +25,16 @@
 	/* CSS styling mostly comes from https://www.youtube.com/watch?v=P8YuWEkTeuE
 	Most CSS code is altered to match my own design needs */
 
+	/* @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap"); */
+
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+	
+    
 }
 
 
@@ -90,6 +96,34 @@ button.normal {
 
 }
 
+button.normal2 {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+
+}
+
+button.normal3 {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+
+}
+
 /* Header Start */
 #header{
 	/* placing navbar header items on other side of the screen */
@@ -135,6 +169,12 @@ button.normal {
 #navbar li a:active  {
 	color:#19bb00;
 }
+
+#navbar span {
+	font-size: 20px;
+}
+
+
 
 /* remove mobile sidebar navigation icon from main website screen  */
 #mobile {
@@ -722,10 +762,241 @@ included in the html code (button.normal) */
 }
 
 
+/* Cart and Checkout code start */
+
+.price-quantity {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.bi-dash-lg {
+	color: red;
+}
+
+.bi-plus-lg {
+	color: green;
+}
+
+.products-container {
+	max-width: 655px;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.product-header {
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid lightgreen;
+	margin: 0 auto;
+}
+
+.product-title {
+	width: 45%;
+}
+
+.price {
+	width: 15%;
+	border-bottom: 1px solid lightgreen;
+	display: flex;
+	align-items: center;
+}
+
+.quantity {
+	width: 30%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+}
+
+.total {
+	width: 10%;
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+}
+
+.product {
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid lightgreen;
+
+}
+/* NET REPAIR CALENDAR CODE */
+
+#calendar-body {
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+	background-color: #FFFCFF;
+  }
+  #button {
+	width: 75px;
+	cursor: pointer;
+	box-shadow: 0px 0px 2px gray;
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+  }
+  
+  #calendar-header {
+	padding: 15px;
+	color: #d36c6c;
+	font-size: 26px;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: space-between;
+  }
+  #calendar-header button {
+	background-color:green;
+	width: 75px;
+	cursor: pointer;
+	box-shadow: 0px 0px 2px gray;
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+  }
+  #calendar-container {
+	width: 770px;
+	
+  }
+  #weekdays {
+	width: 100%;
+	display: flex;
+	color: #247BA0;
+  }
+  #weekdays div {
+	width: 100px;
+	padding: 25px;
+	font-size: 14px;
+	margin-right: 8px;
+  }
+  #calendar {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .day {
+	width: 100px;
+	padding: 10px;
+	height: 100px;
+	cursor: pointer;
+	box-sizing: border-box;
+	background-color: white;
+	margin: 5px;
+	box-shadow: 0px 0px 3px #CBD4C2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  .day:hover {
+	background-color: #e8faed;
+  }
+  
+  .day + #currentDay {
+	background-color:#e8f4fa;
+  }
+  .event {
+	font-size: 10px;
+	padding: 3px;
+	background-color: #58bae4;
+	color: white;
+	border-radius: 5px;
+	max-height: 55px;
+	overflow: hidden;
+  }
+  .padding {
+	cursor: default !important;
+	background-color: #FFFCFF !important;
+	box-shadow: none !important;
+  }
+  #newEventModal, #deleteEventModal {
+	display: none;
+	z-index: 20;
+	padding: 25px;
+	background-color: #e8f4fa;
+	box-shadow: 0px 0px 3px black;
+	border-radius: 5px;
+	width: 400px;
+	height: 200px;
+	top: 200px;
+	left: calc(50% - 175px);
+	position: fixed;
+	font-family: sans-serif;
+  }
 
 
+  #eventTitleInput {
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	box-shadow: 0px 0px 3px gray;
+  }
+  #eventTitleInput.error {
+	border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+	background-color:green;
+	width: 75px;
+	cursor: pointer;
+	box-shadow: 0px 0px 2px gray;
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+  }
+  #saveButton, #closeButton {
+	background-color:green;
+	width: 75px;
+	cursor: pointer;
+	box-shadow: 0px 0px 2px gray;
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+  }
+  #eventText {
+	font-size: 14px;
+  }
+  #modalBackDrop {
+	display: none;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+ 
 
-/* net repair calender code */
+
 
 
 
@@ -825,6 +1096,8 @@ included in the html code (button.normal) */
 		height: 30vh;
 	}
 
+	
+
 	/* creating responsive code for smaller media screen (iPhone X in this case) */
 	/* This section consists of just altering the CSS code to fit the smaller screen  */
 
@@ -914,9 +1187,44 @@ included in the html code (button.normal) */
 		#prodetails .single-product-desc {
 			width: 100%;
 		}
+
+		#calendar-container {
+			width: 100%;
+			
+		  }
+
+		  .day {
+			width: 50px;
+			padding: 5px;
+			height: 50px;
+			
+		  }
+
+		  #weekdays {
+			width: 50px;
+			
+		  }
+
+		  #weekdays div {
+			width: 50px;
+			padding: 5px;
+			font-size: 8px;
+			font-weight: 400;
+		  }
+
+		  #newEventModal, #deleteEventModal {
+			
+			width: 360px;
+			height: 200px;
+			top: 150px;
+			
+		}
+		  
 	}
 
 
+
+	
 	
 	
 

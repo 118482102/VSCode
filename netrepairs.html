@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Majority of code comes from https://www.youtube.com/watch?v=m9OSBJaQTlM but was written 
+    by scratch and commented on throughout -->
   
   <!-- code for header and navbar -->
   <!-- start with creating the logo -->
@@ -20,12 +23,12 @@
    <!-- creating navigation bar locations + icon from fontawesome.com -->
    <div>
       <ul id="navbar">
-        <li><a href="index.html">Home</a></li>
+        <li><a  href="index.html">Home</a></li>
         <li><a href="shopnets.html">Sports Nets</a></li>
-        <li><a class="active" href="netrepairs.html">Net Repairs</a></li>
+        <li><a  class="active" href="netrepairs.html">Net Repairs</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i><span>0</span></a></li>
         <a href="#" id="closeButton"><i class="fas fa-times"></i></a>
          
       </ul>
@@ -40,83 +43,130 @@
   
 </section>
 
-
-
-
+<section id="goalnets-page-header">
+  
+  <h2>Nets Repair Service</h2>
+  <p>50+ years of experience with net mending processes</p>
   
 
-<!-- footer for our home page -->
-<footer class="section-p1">
-  <div class="column">
-    <img class="logo" src="images/logo1.png" alt="">
-    <h4>Contact</h4>
-    <p><strong>Address:</strong> 10 Church Road, Ardfert, Co. Kerry</p>
-    <p><strong>Phone:</strong> 012-3456789</p>
-    <p><strong>Email:</strong> ardfertnets@gmail.com</p>
+</section>
 
-    <div class="follow">
-    <h4>Follow Us On Social Media</h4>
-    <!-- icons for social media connectivity -->
-    <div class="icon"></div>
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-twitter"></i>
-  </div>
-  </div>
+<section id="banner" class="section-m1">
+  
+  <h2>Select a date below For <span>Quality Service</span> At An Affordable Price</h2>
+  
+</section>
 
-  <!-- class column for website information -->
-  <div class="column">
-    <h4>About</h4>
-    <a href="#">About Us</a>
-    <a href="#">Contact Us</a>
-    <a href="#">Delivery Information</a>
-    <a href="#">Returns Information</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms and Conditions</a>
-  </div>
-
-  <!-- class column for customer account information -->
-  <div class="column">
-    <h4><strong>Your Account</strong></h4>
-    <a href="#">Register/Sign In</a>
-    <a href="#">View Cart</a>
-    <a href="#">My Wishlist</a>
-    <a href="#">Track My Order</a>
-    <a href="#">Purchase History</a>
-    <a href="#">Help</a>
-  </div>
-
-
-  <div class="col install">
-    <h4>App Coming Soon</h4>
-    <p>To Both App Store and Google Play</p>
-    <div class="row">
-      <img src="images/appstore.jpg" alt="">
-      <img src="images/googleplay.png" alt="">
+  
+<section id="calendar-body">
+  <div id="calendar-container">
+    <div id="calendar-header">
+      <div id="monthDisplay"></div>
+      <div>
+        <button class="calendar-button" id="backButton">Back</button>
+        <button class="calendar-button" id="nextButton">Next</button>
+      </div>
     </div>
-    <p>Secure Payment Gateway</p>
-    <img src="images/stripe.jpg" alt="">
+
+    <div id="weekdays">
+      <div>Sunday</div>
+      <div>Monday</div>
+      <div>Tuesday</div>
+      <div>Wednesday</div>
+      <div>Thursday</div>
+      <div>Friday</div>
+      <div>Saturday</div>
+    </div>
+
+    <div id="calendar"></div>
   </div>
 
+  <div id="newEventModal">
+    <h4>New Appointment</h4>
 
-  <!-- class for copyright text at bottom of the page  -->
-  <div class="copyright">
-    <p>© 2022 Ardfert Nets, Church Road, Ardfert, Co. Kerry. Company no. 123456789</p>
+    <input id="eventTitleInput" placeholder="Please enter your name and contact number">
+
+    <button id="saveButton">Save</button>
+    <button id="cancelButton">Cancel</button>
   </div>
 
+  <div id="deleteEventModal">
+    <h2>Net Repair Appointment</h2>
 
-</footer>
+    <p id="eventText"></p>
+
+    <button id="deleteButton">Delete</button>
+    <button id="closeButton">Close</button>
+  </div>
+
+  <div id="modalBackDrop"></div>
+
+</section>
 
 
+
+  <footer class="section-p1">
+    <div class="column">
+      <img class="logo" src="images/logo1.png" alt="">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 10 Church Road, Ardfert, Co. Kerry</p>
+      <p><strong>Phone:</strong> 012-3456789</p>
+      <p><strong>Email:</strong> ardfertnets@gmail.com</p>
   
+      <div class="follow">
+      <h4>Follow Us On Social Media</h4>
+      <!-- icons for social media connectivity -->
+      <div class="icon"></div>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    </div>
+  
+    <!-- class column for website information -->
+    <div class="column">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Returns Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+    </div>
+  
+    <!-- class column for customer account information -->
+    <div class="column">
+      <h4><strong>Your Account</strong></h4>
+      <a href="#">Register/Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Purchase History</a>
+      <a href="#">Help</a>
+    </div>
+  
+  
+    <div class="col install">
+      <h4>App Coming Soon</h4>
+      <p>To Both App Store and Google Play</p>
+      <div class="row">
+        <img src="images/appstore.jpg" alt="">
+        <img src="images/googleplay.png" alt="">
+      </div>
+      <p>Secure Payment Gateway</p>
+      <img src="images/stripe.jpg" alt="">
+    </div>
+  
+  
+    <!-- class for copyright text at bottom of the page  -->
+    <div class="copyright">
+      <p>© 2022 Ardfert Nets, Church Road, Ardfert, Co. Kerry. Company no. 123456789</p>
+    </div>
+  
+  
+  </footer>
 
 
-
-
-
-
-
-
-     <script src="scripts.js"></script>
-</body>
+    <script src="./scripts.js"></script>
+  </body>
 </html>
